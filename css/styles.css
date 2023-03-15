@@ -1,0 +1,32 @@
+
+/* -------------------------------FONTS----------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+/* ------------------------------VARIABLES---------------------------------------------- */
+
+:root{
+    /* COLORS */
+    --principalColor: hsl(0, 0%, 97%);
+    --blackRgb: rgba(0, 0, 0, .2);
+    --shadowRgb: rgba(0, 0, 0, .6);
+
+}
+
+
+
+/* ------------------------------STYLES---------------------------------------------- */
+
+body{
+  background-color: var(--principalColor);
+}
+
+h1{
+    z-index: 1;
+    background-color: var(--blackRgb);
+    height: 5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800; 
+    text-shadow: 2px 2px 5px var(--shadowRgb), -2px -2px 5px var(--shadowRgb);
+}
+

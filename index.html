@@ -10,9 +10,52 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-       
+    <!-- NAV -->
+    <nav class="navbar navbar-dark navbar-expand-md  | bg-dark bg-gradient |  fixed-bottom sticky-sm-top" >
+        <img src="./images/logo_footer.png" alt="logo A & F" class="navbar-brand | ms-5 | col-3 col-md-2 col-lg-1">
+        <button class="navbar-toggler navbar-toggler-icon | me-5" data-bs-target=".navbar-nav" data-bs-toggle="collapse"></button>
+        <ul class="navbar-nav navbar-collapse collapse | me-md-5 | justify-content-end" >
+            <li class="nav-link"><a href="#" class="text-light  fs-5 text-decoration-none ">Servicios</a></li>
+            <li class="nav-link"><a href="#" class="text-light  fs-5 text-decoration-none ">Catálogo</a></li>
+            <li class="nav-link"><a href="#" class="text-light  fs-5 text-decoration-none ">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <header id="header" class="carousel slide | w-100vw p-0">
+        <h1 class="text-light text-shadow | position-absolute top-50 start-50 translate-middle | w-100 | d-flex justify-content-center align-items-center">A & F - Diseño de Interiores</h1>
+        <!-- IMAGES -->
+        <ul class="carousel-inner | list-unstyled | w-100vw m-0 p-0 mt-4" >
+            <li class="carousel-item active">
+                <img src="./images/img-01.jpg" alt="Living" class="d-sm-none  mx-auto w-100" >
+                <img src="./images/sm-01.jpg" alt="Concina" class="d-none d-sm-block mx-auto w-100">
+            </li>
+            <li class="carousel-item">
+                <img src="./images/img-02.jpg" alt="Habitació" class="d-sm-none  mx-auto w-100">
+                <img src="./images/sm-02.jpeg" alt="Living" class="d-none d-sm-block mx-auto w-100">
+            </li>
+            <li class="carousel-item">
+                <img src="./images/img-03.jpg" alt="Living" class="d-sm-none  mx-auto w-100 ">
+                <img src="./images/sm-03.png" alt="Living" class="d-none d-sm-block mx-auto w-100">
+            </li>
+        </ul>
+        <!-- CONTROLS -->
+            <button class="carousel-control-prev" data-bs-target="#header" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#header" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+                <!-- INDICATORS -->
+        <div class="carousel-indicators">
+            <button  data-bs-target="#header" data-bs-slide-to="0" class="active"></button>
+            <button  data-bs-target="#header" data-bs-slide-to="1"></button>
+            <button  data-bs-target="#header" data-bs-slide-to="2"></button>
+        </div>
+
     </header>
+
+
     <main>
 
     </main>
