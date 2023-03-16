@@ -21,6 +21,10 @@ body{
   background-color: var(--principalColor);
 }
 
+nav{
+  height: auto;
+}
+
 h1{
     z-index: 1;
     background-color: var(--blackRgb);
@@ -51,4 +55,18 @@ h1{
 #galery img:hover{
   box-shadow: 1px 1px 5px var(--shadowRgb);
   width: 300px;
+}
+
+#wapp{
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  position: fixed;
+  top: 90vh;
+  right: 10px;
+  z-index: 10;
+}
+
+.contacto{
+  min-width: 300px;
 }
