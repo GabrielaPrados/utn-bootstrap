@@ -10,115 +10,199 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="constiner-fluid">
     <!-- NAV -->
     <nav class="navbar navbar-dark navbar-expand-md  | bg-dark bg-gradient |  sticky-top" >
-        <img src="./images/logo_footer.png" alt="logo A & F" class="navbar-brand | m-auto | col-3 col-md-2 col-lg-1">
-        <button class="navbar-toggler navbar-toggler-icon | me-5 w-10" data-bs-target=".navbar-nav" data-bs-toggle="collapse"></button>
-        <ul class="navbar-nav navbar-collapse collapse | me-md-5 | justify-content-end" >
-            <li class="nav-link"><a href="#" class="text-warning  fs-5 text-decoration-none ">Servicios</a></li>
-            <li class="nav-link"><a href="#" class="text-warning  fs-5 text-decoration-none ">Catálogo</a></li>
-            <li class="nav-link"><a href="#" class="text-warning  fs-5 text-decoration-none ">Contacto</a></li>
+        <img id="brandIcon" src="./images/logo_footer.png" alt="logo A & F" class="navbar-brand | m-2| col-3 col-lg-1">
+        <button class="navbar-toggler navbar-toggler-icon | me-5 w-10 ms-auto" data-bs-target=".navbar-nav" data-bs-toggle="collapse"></button>
+        <ul class="navbar-nav navbar-collapse collapse | me-md-5 | justify-content-end gap-3" 
+        >
+            <li class="nav-link"><a href="#sectionServicios" class="text-warning  fs-5 text-decoration-none p-2">Servicios</a></li>
+            <li class="nav-link"><a href="#catalogue" class="text-warning  fs-5 text-decoration-none p-2">Catálogo</a></li>
+            <li class="nav-link"><a href="#contactSection" class="text-warning  fs-5 text-decoration-none p-2">Contacto</a></li>
         </ul>
     </nav>
 
     <!-- CAROUSEL -->
     <header id="header" class="carousel slide | w-100vw p-0">
-        <h1 class="text-light text-shadow text-center| position-absolute top-50 start-50 translate-middle | w-100 | d-flex justify-content-center align-items-center">A & F - Diseño de Interiores</h1>
+        
+        <h1 class="row text-light text-shadow text-center | position-absolute top-50 start-50 translate-middle | w-100 | d-flex justify-content-center align-items-center">A & F - Diseño de Interiores</h1>
+        
         <!-- IMAGES -->
         <ul class="carousel-inner | list-unstyled | w-100vw m-0 p-0 mt-4" >
             <li class="carousel-item active">
-                <img src="./images/img-01.jpg" alt="Living" class="d-sm-none  mx-auto w-100" >
-                <img src="./images/sm-01.jpg" alt="Concina" class="d-none d-sm-block mx-auto w-100">
+                <img src="./images/img-01.jpg" alt="Living" class="d-sm-none | mx-auto w-100" >
+                <img src="./images/sm-01.jpg" alt="Concina" class="d-none d-sm-block | mx-auto w-100">
             </li>
             <li class="carousel-item">
-                <img src="./images/img-02.jpg" alt="Habitació" class="d-sm-none  mx-auto w-100">
-                <img src="./images/sm-02.jpeg" alt="Living" class="d-none d-sm-block mx-auto w-100">
+                <img src="./images/img-02.jpg" alt="Habitació" class="d-sm-none | mx-auto w-100">
+                <img src="./images/sm-02.jpeg" alt="Living" class="d-none d-sm-block | mx-auto w-100">
             </li>
             <li class="carousel-item">
-                <img src="./images/img-03.jpg" alt="Living" class="d-sm-none  mx-auto w-100 ">
-                <img src="./images/sm-03.png" alt="Living" class="d-none d-sm-block mx-auto w-100">
+                <img src="./images/img-03.jpg" alt="Living" class="d-sm-none | mx-auto w-100 ">
+                <img src="./images/sm-03.png" alt="Living" class="d-none d-sm-block | mx-auto w-100">
             </li>
+            
         </ul>
+        
         <!-- CONTROLS -->
             <button class="carousel-control-prev" data-bs-target="#header" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Ver anterior</span>
             </button>
             <button class="carousel-control-next" data-bs-target="#header" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Ver siguiente</span>
             </button>
+
                 <!-- INDICATORS -->
         <div class="carousel-indicators">
-            <button  data-bs-target="#header" data-bs-slide-to="0" class="active"></button>
-            <button  data-bs-target="#header" data-bs-slide-to="1"></button>
-            <button  data-bs-target="#header" data-bs-slide-to="2"></button>
+            <button  data-bs-target="#header" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1"></button>
+            <button  data-bs-target="#header" data-bs-slide-to="1" aria-label="slide 2"></button>
+            <button  data-bs-target="#header" data-bs-slide-to="2" aria-label="slide 3"></button>
         </div>
-
     </header>
-
-
+    
+    <div id="sectionServicios"></div>
     <main>
-        <div id="servicios" class="d-flex flex-column justify-content-center align-items-center mt-4 p-4">
-            <h2 class="h1 text-secondary">Servicios</h2>
-            <p class="h2 fst-italic text-black-50 text-center">Hacemos realidad tus sueños</p>
-            <a href="#" class="btn btn-dark m-2 text-warning">CONTACTANOS</a>
+        <div id="divition" class="container-fluid d-flex flex-column justify-content-center align-items-center | mt-4 p-4">
+            <h2 class="row | h1 text-secondary">Servicios</h2>
+            <p class="row | h2 fst-italic text-black-50 text-center">Hacemos realidad tus sueños</p>
+            <a href="#contactSection" class="btn btn-dark | m-2  | text-warning">CONTACTANOS</a>
         </div>
-        <section class="row row-cols-md-4 justify-content-evenly m-3">
-            <article class="card m-2 p-0">
-                <h3 class="card-header bg-secondary text-warning w-100">Particulares</h3>
+
+        <!-- CARDS -->
+        <section id="cardSection" class="container-fluid row row-cols-md-4 justify-content-center gap-2 | my-3 mx-auto" >
+            <article class="card my-2 p-0">
+                <h3 class="card-header bg-secondary | text-warning">Particulares</h3>
                 <p class="card-body">No importa que desees decorar, te ayudamos con tu visión realizando maquetacion 3D para que puedas ver el proyecto finalizado antes de comenzar.</p>
-                <span class="card-footer text-end">Me interesa <i class="bi bi-heart"></i></span>
+                <span class="card-footer | text-end">Me interesa <i class="bi bi-heart"></i></span>
             </article>
-            <article class="card m-2 p-0">
-                <h3 class="card-header bg-secondary text-warning">Oficinas</h3>
+            <article class="card my-2 p-0">
+                <h3 class="card-header bg-secondary | text-warning">Oficinas</h3>
                 <p class="card-body">No solo diseñamos para que el lugar de trabajo sea agradable, sino que también te ayudaremos a cumplir con las disposiciones de seguridad, higiene y ergonomía adecuadas.</p>
-                <span class="card-footer text-end">Me interesa <i class="bi bi-heart"></i></span>
+                <span class="card-footer | text-end">Me interesa <i class="bi bi-heart"></i></span>
             </article>
-            <article class="card m-2 p-0">
-                <h3 class="card-header bg-secondary text-warning">Paisajismo</h3>
+            <article class="card my-2 p-0">
+                <h3 class="card-header bg-secondary | text-warning">Paisajismo</h3>
                 <p class="card-body">Te ayudamos a diseñar y construir espacios verdes hermosos sin importar el espacio físico con el que cuentes.</p>
-                <span class="card-footer text-end">Me interesa <i class="bi bi-heart"></i></span>
+                <span class="card-footer | text-end">Me interesa <i class="bi bi-heart"></i></span>
             </article>
+            <article class="card my-2 p-0">
+                <h3 class="card-header bg-secondary | text-warning">Albañilería</h3>
+                <p class="card-body">Ponemos a tu disposició albañiles profesionales para reformas o construcciones.</p>
+                <span class="card-footer | text-end">Me interesa <i class="bi bi-heart"></i></span>
+            </article>
+            <article class="card my-2 p-0">
+                <h3 class="card-header bg-secondary | text-warning">Electricidad</h3>
+                <p class="card-body">Nuestro personal cuenta con habilitación profesional para los trabajos que necesites realizar.</p>
+                <span class="card-footer | text-end">Me interesa <i class="bi bi-heart"></i></span>
+            </article>
+            <article class="card my-2 p-0">
+                <h3 class="card-header bg-secondary | text-warning">Mobiliario</h3>
+                <p class="card-body">Contamos con una red de prestadores de mobiliario que te realizarán descuentos especiales.</p>
+                <span class="card-footer | text-end">Me interesa <i class="bi bi-heart"></i></span>
+            </article>
+            
         </section>
-        <div id="servicios" class="d-flex flex-column justify-content-center align-items-center mt-4 p-4">
-            <h2 class="h1 text-secondary">Catálogo</h2>
-            <p class="h2 fst-italic text-black-50 text-center">Algunos de nuestros trabajos</p>
-            <a href="#" class="btn btn-dark m-2 text-warning">CONTACTANOS</a>
+        
+        <div id="catalogue"></div>
+        <div id="divition" class="container-fluid d-flex flex-column justify-content-center align-items-center | mt-4 p-4">
+            <h2  class="row | h1 text-secondary">Catálogo</h2>
+            <p class="row | h2 fst-italic text-black-50 text-center">Algunos de nuestros trabajos</p>
+            <a href="#contactSection" class="btn btn-dark | m-2 | text-warning">CONTACTANOS</a>
         </div>
-        <section id="galery" class="row row-cols-md-4 justify-content-center my-3">
-            <img src="./images/libreria-01.jpg" alt="dormitorio" class="img-thumbnail m-1">
-            <img src="./images/libreria-02.png" alt="comedor" class="img-thumbnail m-1" >
-            <img src="./images/libreria-03.png" alt="vestívulo" class="img-thumbnail m-1">
-            <img src="./images/libreria-04.png" alt="habitación" class="img-thumbnail m-1">
-            <img src="./images/libreria-05.jpg" alt="cocina" class="img-thumbnail m-1">
-            <img src="./images/libreria-06.jpg" alt="living" class="img-thumbnail m-1">
-            <img src="./images/office-01.jpg" alt="oficina vista externa" class="img-thumbnail m-1">
-            <img src="./images/office-02.jpg" alt="oficina" class="img-thumbnail m-1">
-            <img src="./images/office-03.jpg" alt="oficina grupal" class="img-thumbnail m-1">
-            <img src="./images/landscaping-01.jpg" alt="jardín interno" class="img-thumbnail m-1">
-            <img src="./images/landscaping-02.jpg" alt="jardín externo" class="img-thumbnail m-1">
-            <img src="./images/landscaping-03.jpg" alt="jardín externo" class="img-thumbnail m-1">
+
+        <section id="galery" class="container-fluid row row-cols row-cols-sm-3 12 row-cols-md-4 justify-content-center | my-3 mx-auto">
+            <img src="./images/libreria-01.jpg" alt="dormitorio" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/libreria-02.png" alt="comedor" class="img-fluid img-thumbnail | m-1" >
+            <img src="./images/libreria-03.png" alt="vestívulo" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/libreria-04.png" alt="habitación" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/libreria-05.jpg" alt="cocina" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/libreria-06.jpg" alt="living" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/office-01.jpg" alt="oficina vista externa" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/office-02.jpg" alt="oficina" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/office-03.jpg" alt="oficina grupal" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/landscaping-01.jpg" alt="jardín interno" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/landscaping-02.jpg" alt="jardín externo" class="img-fluid img-thumbnail | m-1">
+            <img src="./images/landscaping-03.jpg" alt="jardín externo" class="img-fluid img-thumbnail | m-1">
+        </section>
+    
+     
+        <div id="contactSection"></div>
+        <div id="divition" class="container-fluid d-flex flex-column justify-content-center align-items-center | mt-4 p-4">
+            <h2 class="row | h1 text-secondary">Contacto</h2>
+            <p class="row | h5 fst-italic text-black-50 text-center">Completá el formulario y nos contactaremos a la brevedad.</p>
+        </div>
+
+        <section id="contact" class="container-fluid row justify-content-evenly | mx-auto my-5 p-0 | w-100">
+
+            <form action="" class="col-12 col-md-5 | my-auto p-3 | border border-warning rounded ">
+                <fieldset>
+                    <label for="name" class="form-label | w-100 ps-1 | fw-bold | back">Nombre:</label>
+                    <input type="text" name="name" id="name"  class="form-control" placeholder="Ingrese su nombre*" required maxlength="50" pattern="[A-z a-z]{3,50}">
+                    <span class="invalid-feedback | text-danger">Ingrese solo letras y entre 3 y 50 caracteres. </span>
+                </fieldset>
+                <fieldset class="mt-2">
+                    <label for="tel" class="form-label | w-100 ps-1 | fw-bold | back">Teléfono:</label>
+                    <input type="text" name="telephone" id="tel"  class="form-control" placeholder="Ej: 1122222222*" required max="16" pattern="[0-9]{8,16}">
+                    <span class="invalid-feedback | text-danger">Ingrese solo numeros y entre 8 y 16 digitos.</span>
+                </fieldset>
+
+                <p class="mt-3 ps-1 fw-bold w-100 back">Horario de contacto</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="morning" name="timeDay" value="mañana" checked>
+                    <label for="morning form-label">de 9 a 13</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="afternoon" name="timeDay" value="mediatarde">
+                    <label for="afternoon form-label">de 13 a 18</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="night" name="timeDay" value="tarde" >
+                    <label for="night form-label">de 18 a 21</label>
+                </div>
+                
+                <fieldset>
+                    <label for="mail" class="form-label | w-100 ps-1 | fw-bold | back" >Mail:</label>
+                    <input type="email" id="mail" class="form-control" placeholder="Ej: mimail@mail.com*" required maxlength="50">
+                    <span class="invalid-feedback | text-danger">Ingrese un mail respetando el formato mimail@mail.com</span>
+                </fieldset>
+                
+                <label for="commnets" class="form-label mt-3 ps-1 fw-bold w-100 back">Comentarios</label>
+                <textarea name="comments" id="comments"  class="form-control" placeholder="Contanos que te interesa saber."></textarea>
+                
+                <small class="text-secondary">Se deben completar los datos marcados con *</small>
+                <button id="resetBtn" class="btn btn-warning | mt-4 w-100 | fw-bold "> Borrar </button>
+                <button id="contactSubmit" class="btn btn-warning | d-none | mt-4 w-100 | fw-bold " disabled> Quiero que me contacten </button>
+                
+            </form>
+            
+            <!-- se que puedo hacer esto con carousel e data-bs-interval, pero prefiero hacerlo desde js para no seguir agregando contenido a mi html -->
+            <div id="contactImg" class="col-6 col-md-7 d-none d-md-flex justify-content-center align-items-center " >
+                    <img src="./images/img-01.jpg" alt="imagenes varias">
+            </div>
+            
         </section>
     </main>
+    <div id="wapp" class="bg-warning | d-flex justify-content-center align-items-center"><a href="http://api.whatsapp.com/send?phone=1140221747&text=Hola, quisiera que me contacten." target="_blank"><i class="bi bi-whatsapp text-dark fs-5"></i></a></div>
 
-    <div id="wapp" class="bg-warning d-flex justify-content-center align-items-center border-radious"><i class="bi bi-whatsapp text-dark fs-5"></i></div>
-
-    <footer class="row bg-dark text-light p-3 opacity-75 d-flex justify-content-evenly align-items-center  flex-wrap">
-        <div class="col-7 text-center col-md-4 contacto" >
-            <h2 class="h6">Información de contacto</h2>
+    <footer class="container-fluid d-flex justify-content-evenly align-items-center  flex-wrap row | bg-dark opacity-75 | text-light pt-3  ">
+        <div class="col-7 col-md-4 | text-center |  contacto" >
+            <h2 class="h6 text-decoration-underline">Información de contacto</h2>
             <i class="bi bi-geo-alt-fill d-block"> Saravi 2368 - Pilar</i> 
             <i class="bi bi-clock-history d-block"> Atencion de 9.00 a 17.00</i>
             <i class="bi bi-phone d-block"> 11 1234 5678</i>
             <i class="bi bi-envelope d-block"> gabrielavprados@gmail.com</i>
         </div>
-        <div class="col-12 col-sm-1 text-center p-3" >
-            <i class="bi bi-facebook m-1 text-warning"> <a href="https://www.facebook.com/" target="_blank"></a> </i>
-            <i class="bi bi-instagram m-1 text-warning"> <a href="https://www.instagram.com/" target="_blank"></a> </i>
-            <i class="bi bi-pinterest m-1 text-warning"> <a href="https://ar.pinterest.com/" target="_blank"></a> </i>
-            <i class="bi bi-linkedin m-1 text-warning"> <a href="https://ar.linkedin.com/" target="_blank"></a> </i>
+        <div class="col-12 col-sm-4 | m-2 | text-center" >
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook | m-1 | text-warning"></i></a> 
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram | m-1  | text-warning"></i></a>
+            <a href="https://ar.pinterest.com/" target="_blank"><i class="bi bi-pinterest | m-1 | text-warning"></i></a>
+            <a href="https://ar.linkedin.com/" target="_blank"> <i class="bi bi-linkedin | m-1 | text-warning"></i></a>
         </div>
-        <div  class="col-12 d-flex justify-content-center align-items-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.922503221387!2d-58.83819018416747!3d-34.45411505710592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c1b98276665%3A0x3944541f983b8e72!2sSaravi%202368%2C%20La%20Lonja%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678923130223!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="position-relative w-100 m-3 p-0"></iframe>
+        <div  class="col-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.922503221387!2d-58.83819018416747!3d-34.45411505710592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9c1b98276665%3A0x3944541f983b8e72!2sSaravi%202368%2C%20La%20Lonja%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1678923130223!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="position-relative | m-0 my-3 p-0 | w-100 | rounded" ></iframe>
         </div> 
         <div id="space"></div>
     </footer>
