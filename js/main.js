@@ -55,8 +55,6 @@ document.addEventListener("click", (e) => {
         e.preventDefault()
         const inputs = document.querySelectorAll("#contact input")
         const textarea = document.querySelector("#contact textarea")
-        console.dir(textarea.value);
-        console.log(textarea.value)
         inputs.forEach(input => input.value = "")
         textarea.value = ""
     }
@@ -83,7 +81,6 @@ document.addEventListener("input", (e) => {
             const firstInput = requiredElements[0]
             const actualInput = requiredElements[i];
             const precedeInput = requiredElements[i - 1];
-          
             
             if (!(t === firstInput)) {
                 if (i !== 0 && t === actualInput) {
@@ -98,9 +95,7 @@ document.addEventListener("input", (e) => {
                             const serachSpanDisabled = document.querySelectorAll(".spanDisabled")
                             if (serachSpanDisabled.length===0) {
                                 const spanDisabled = document.createElement("span")
-                                spanDisabled.classList.add("spanDisabled")
-                                spanDisabled.classList.add("red")
-                                spanDisabled.classList.add("fsize")
+                                spanDisabled.classList.add("spanDisabled", "red",  "fsize")
                                 spanDisabled.innerHTML = "Debe completar este Casillero"
                                 precedeInput.insertAdjacentElement("beforebegin", spanDisabled)
                             }
